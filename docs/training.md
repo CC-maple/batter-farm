@@ -15,7 +15,7 @@
 
 ## 数据与标注
 
-完整训练图片和标注已单独备份，不随源码仓库分发。数据准备入口：
+训练数据集（包括训练图片和标注）不提供。需要自行准备和审核数据。数据准备入口：
 
 ```powershell
 .\.venv\Scripts\python.exe tools/training/prepare_farm_icon_dataset.py --help
@@ -31,7 +31,7 @@
 .\.venv\Scripts\python.exe tools/training/detect_farm_icons.py --help
 ```
 
-训练和评估必须自行准备数据集及初始化权重。根据实际训练记录选择参数，保存类别、数据切分、运行参数、验证结果和权重 SHA-256。
+训练和评估必须自行准备数据集。可使用仓库中的 `models/farm-icons/best.pt` 继续训练；如需其他初始化权重，应自行获取。根据实际训练记录选择参数，保存类别、数据切分、运行参数、验证结果和权重 SHA-256。
 
 ## WSL ROCm
 
@@ -43,4 +43,4 @@ GPU 训练入口为 `tools/training/train_farm_icon_detector_wsl.py`。在 WSL �
 
 ## 模型导出
 
-运行使用 ONNX，继续训练使用 `.pt`。权重需单独分发并附类别表、来源、评估限制和 SHA-256；默认路径为 `models/farm-icons/best.onnx`。
+运行使用 ONNX，继续训练使用 `.pt`。当前四分类的两份权重已随仓库提供，类别表、来源、评估限制和 SHA-256 见 `models/farm-icons/`；默认运行路径为 `models/farm-icons/best.onnx`。

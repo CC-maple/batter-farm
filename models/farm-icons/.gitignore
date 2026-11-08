@@ -6,3 +6,5 @@
 *.openvino
 metrics.json
 runs/
+!best.pt
+!best.onnx

@@ -16,7 +16,7 @@ UI 入口为 `python -m src.ui.app`，CLI 入口为 `main.py`。UI 的延迟导�
 
 固定模板位于 `assets/template-matching/`，固定路线位于 `assets/recordings/`。运行日志、新录制和调试截图位于 `logs/`，个人任务保存在配置旁的 `*.user_tasks.yaml`，均由 Git 忽略。
 
-模型权重和数据集不放入源码仓库。当前默认模型是四分类；鱼卡为 OCR 目标，餐厅任务尚未重新验收。
+仓库提供当前四分类模型的 `best.onnx` 和 `best.pt`，其他训练产物仍由 Git 忽略；训练数据集不提供。鱼卡为 OCR 目标，餐厅任务尚未重新验收。
 
 ## 复制整理范围
 

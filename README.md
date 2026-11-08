@@ -49,13 +49,14 @@ python -m venv .venv
 
 ## 模型与运行资源
 
-当前程序使用四分类模型，类别顺序为 `watering`、`harvest`、`fishing`、`midwifery`。请另行准备权重并放置到：
+仓库已提供当前程序使用的四分类模型，类别顺序为 `watering`、`harvest`、`fishing`、`midwifery`：
 
 ```text
 models/farm-icons/best.onnx
+models/farm-icons/best.pt
 ```
 
-模型权重和训练数据集不随源码提供。`models/farm-icons/` 保留类别表、标注工具配置及模型说明；模型缺失时，运行预检会明确报告错误。五分类模型尚未接入默认配置，不要直接覆盖四分类模型。
+`best.onnx` 用于运行检测，`best.pt` 用于继续训练或重新导出。类别表、标注工具配置、模型来源和 SHA-256 校验信息也位于 `models/farm-icons/`。**训练数据集不提供。** 模型缺失时，运行预检会明确报告错误。五分类模型尚未接入默认配置，不要直接覆盖四分类模型。
 
 仓库包含六张实际使用的模板及遮罩，统一位于 `assets/template-matching/`。`*_mask.png` 由加载器自动关联同名模板。
 
@@ -78,7 +79,7 @@ models/farm-icons/best.onnx
 src/                 核心识别、输入、运行时、业务任务和 UI
 configs/             默认运行配置
 assets/              固定模板及路线
-models/              模型元数据，权重另行准备
+models/              当前四分类模型权重、类别表与校验信息
 tools/recording/     录制、回放、拆分与摘要
 tools/vision/        校准、模板匹配和标注草稿
 tools/training/      数据准备、训练、检测与评估

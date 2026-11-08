@@ -16,6 +16,8 @@ runs/
 outputs/
 *.pt
 *.onnx
+!/models/farm-icons/best.pt
+!/models/farm-icons/best.onnx
 *.engine
 *.tflite
 *.cache

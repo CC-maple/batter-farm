@@ -5,3 +5,5 @@
 *.md text eol=lf
 *.bat text eol=crlf
 *.png binary
+*.pt binary
+*.onnx binary
