@@ -56,7 +56,7 @@ models/farm-icons/best.onnx
 models/farm-icons/best.pt
 ```
 
-`best.onnx` 用于运行检测，`best.pt` 用于继续训练或重新导出。类别表、标注工具配置、模型来源和 SHA-256 校验信息也位于 `models/farm-icons/`。**训练数据集不提供。** 模型缺失时，运行预检会明确报告错误。五分类模型尚未接入默认配置，不要直接覆盖四分类模型。
+`best.onnx` 用于运行检测，`best.pt` 用于继续训练或重新导出。类别表、标注工具配置、模型来源和 SHA-256 校验信息也位于 `models/farm-icons/`。**训练集仍在整理中，如有需要请[提交 Issue](https://github.com/CC-maple/batter-farm/issues)。** 模型缺失时，运行预检会明确报告错误。五分类模型尚未接入默认配置，不要直接覆盖四分类模型。
 
 仓库包含六张实际使用的模板及遮罩，统一位于 `assets/template-matching/`。`*_mask.png` 由加载器自动关联同名模板。
 
