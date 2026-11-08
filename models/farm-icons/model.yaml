@@ -1,0 +1,12 @@
+type: yolo11
+name: farm_icons_v0_4_yolo11n
+provider: BatterFarm
+display_name: Farm Icons V0.4 YOLO11n
+model_path: best.onnx
+iou_threshold: 0.45
+conf_threshold: 0.25
+classes:
+  - watering
+  - harvest
+  - fishing
+  - midwifery

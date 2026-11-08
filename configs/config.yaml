@@ -1,0 +1,589 @@
+window:
+  hwnd: null
+  title: 元梦之星-山海寻灵
+  process_name: LetsGoClient-Win64-Shipping
+  class_name: UnrealWindow
+capture:
+  activate_window: true
+  use_client_region: true
+scheduler:
+  enabled: false
+  mode: legacy
+  idle_scan_interval_seconds: 1.0
+  max_pending_events: 256
+  stale_result_ms: 1500
+  capture:
+    max_in_flight: 1
+    coalesce_window_ms: 50
+    activate_policy: action_only
+  action:
+    max_in_flight: 1
+  fairness:
+    max_consecutive_runs: 1
+    default_cooldown_seconds: 2.0
+  continuous:
+    no_match_policy: reschedule
+  single:
+    no_match_policy: finish
+watchers:
+  fish_card_result:
+    enabled: false
+    scope: fishpond_latest
+    interval_seconds: 2.0
+    initial_timeout_seconds: 60.0
+    post_route_grace_seconds: 5.0
+    max_clicks: 5
+    after_click_wait_seconds: 0.5
+    absent_confirm_frames: 2
+    formal_threshold: 0.9
+    candidate_threshold: 0.9
+    candidate_window: 3
+    candidate_hits: 2
+    timeout_policy: continue_with_warning
+    persistent_after_max_clicks_policy: wait_for_user
+recognition:
+  ocr_engine: rapidocr
+  default_threshold: 0.85
+  ocr_targets:
+  - name: fish_card_result
+    text: 恭喜获得鱼卡
+    category: farm
+    role: observe
+    min_score: 0.9
+    priority: 800
+    roi:
+    - 480
+    - 100
+    - 680
+    - 140
+    base_client_size:
+    - 1600
+    - 900
+    click: true
+    click_point:
+    - 1110
+    - 137
+  templates:
+  - name: farm_header
+    path: assets/template-matching/farm_header.png
+    category: farm
+    role: in_farm
+    threshold: 0.8
+    priority: 1000
+    roi:
+    - 0
+    - 0
+    - 460
+    - 160
+    click: false
+  - name: restaurant_reception_probe
+    path: assets/template-matching/restaurant_reception.png
+    category: farm
+    role: observe
+    threshold: 0.9
+    priority: 55
+    roi:
+    - 600
+    - 40
+    - 460
+    - 360
+    scales:
+    - 0.95
+    - 1.0
+    - 1.05
+    click: false
+    required: false
+detection:
+  enabled: true
+  provider: onnx
+  model_path: models/farm-icons/best.onnx
+  labels_path: models/farm-icons/labels.txt
+  input_size: 960
+  score_threshold: 0.6
+  nms_threshold: 0.45
+  device: cpu
+  classes:
+    watering:
+      min_score: 0.6
+    harvest:
+      min_score: 0.6
+    fishing:
+      min_score: 0.6
+    midwifery:
+      min_score: 0.6
+input:
+  click_delay_seconds: 0.15
+  click_hold_seconds: 0.08
+  move_duration_seconds: 0.05
+  click_backend: sendinput
+  fail_safe: true
+runtime:
+  require_admin: true
+logging:
+  level: INFO
+  file: logs/batterfarm.log
+overlay:
+  enabled: true
+  bind_to_window: true
+  mode: status_mask
+  click_through: true
+  hide_before_capture: false
+  region:
+  - 0
+  - 690
+  - 520
+  - 210
+  base_client_size:
+  - 1600
+  - 900
+  scale_with_client: true
+  follow_interval_ms: 50
+  pump_interval_ms: 50
+  opacity: 0.9
+  text_opacity: 0.95
+  title: BATTERFARM
+  panel_color: '#10151d'
+  border_color: '#344052'
+  text_color: '#f7f9fc'
+  secondary_text_color: '#aab4c2'
+  log_text_color: '#d7dee8'
+  accent_color: '#69d2e7'
+  success_color: '#67e8a5'
+  warning_color: '#ffd166'
+  error_color: '#ff6b6b'
+  idle_color: '#aab4c2'
+  font_family: Microsoft YaHei UI
+  font_size: 13
+  max_lines: 10
+  max_log_lines: 3
+  show_items:
+  - run_state
+  - current_step
+  - active_keys
+  - mouse
+  - last_action
+  - last_marker
+  - last_score
+  - logs
+  match_boxes:
+    enabled: true
+    click_through: true
+    show_mode: best
+    max_boxes: 6
+    duration_ms: 3000
+    pump_interval_ms: 50
+    color: '#00ff66'
+    selected_color: '#ffcc00'
+    outline_color: '#05070a'
+    shadow_width: 2
+    line_width: 3
+    label: true
+    label_background: '#111827'
+    label_text_color: '#f8fafc'
+    label_padding_x: 7
+    label_padding_y: 4
+    max_label_chars: 38
+    font_family: Microsoft YaHei UI
+    font_size: 13
+route:
+  source_recordings:
+    farm_field_latest_104821: assets/recordings/recording_20260710_104821.json
+    pasture_latest_110127: assets/recordings/recording_20260710_110127.json
+    fishpond_latest_110224: assets/recordings/recording_20260710_110224.json
+    hot_spring_latest_110602: assets/recordings/recording_20260710_110602.json
+    restaurant_latest_165712: assets/recordings/recording_20260706_165712.json
+    restaurant_precheck_latest_183147: assets/recordings/recording_20260706_183147.json
+farm_vehicle:
+  independent_tasks:
+  - name: hot_spring_latest
+    display_name: 泡温泉
+    description: 回放已录制的泡温泉路线；仅支持手动独立执行。
+    enabled: true
+    action: replay
+    recording_replay:
+      enabled: true
+      source: hot_spring_latest_110602
+      include_mouse: true
+      ignore_keys: []
+      speed: 1.0
+      max_initial_wait_seconds: 1.5
+  restaurant_service:
+    farm_scene_check:
+      enabled: true
+      roi:
+      - 70
+      - 10
+      - 210
+      - 55
+      contains:
+      - 的农场
+      save_roi: true
+    farm_camera_replay:
+      enabled: true
+      path: assets/recordings/mouse_input_visible_20260710_120713.json
+      settle_seconds: 0.5
+      run_once_per_attempt: true
+      require_mode: visible
+    precheck:
+      enabled: true
+      recording_replay:
+        source: restaurant_precheck_latest_183147
+        include_mouse: true
+        ignore_keys:
+        - r
+        start_ms: 585
+        end_ms: 12720
+        speed: 1.0
+        max_initial_wait_seconds: 1.0
+      after_wait_seconds: 0.2
+      waiting_marker:
+        enabled: true
+        templates:
+        - restaurant_reception_probe
+      after_no_marker_actions:
+      - action: press
+        key: r
+        hold_seconds: 0.08
+        after_wait_seconds: 0.5
+    enter_restaurant:
+      enabled: true
+      actions:
+      - action: press
+        key: q
+        hold_seconds: 0.08
+      after_wait_seconds: 2.0
+    entry_checks:
+      scene:
+        enabled: true
+        roi:
+        - 70
+        - 10
+        - 210
+        - 55
+        contains:
+        - 的餐厅
+      status:
+        enabled: true
+        roi:
+        - 0
+        - 80
+        - 120
+        - 65
+        contains:
+        - 营业中
+    walk_to_menu:
+      enabled: true
+      recording_replay:
+        source: restaurant_latest_165712
+        include_mouse: false
+        ignore_keys:
+        - r
+        start_ms: 33338
+        end_ms: 45025
+        speed: 1.0
+        max_initial_wait_seconds: 1.0
+      after_wait_seconds: 0.2
+    menu:
+      right_click:
+        enabled: true
+        button: right
+        point:
+        - 799
+        - 619
+        after_wait_seconds: 1.0
+      state_text:
+        enabled: true
+        roi:
+        - 1210
+        - 500
+        - 280
+        - 90
+        contains:
+        - 营业中
+    buttons:
+    - name: supplement_ingredients
+      enabled: true
+      text:
+        enabled: true
+        roi:
+        - 1190
+        - 660
+        - 295
+        - 90
+        contains:
+        - 补充食材
+      click_point:
+      - 1336
+      - 706
+      button: left
+    - name: start_business
+      enabled: true
+      text:
+        enabled: true
+        roi:
+        - 1190
+        - 690
+        - 300
+        - 85
+        contains:
+        - 开始经营
+      click_point:
+      - 1375
+      - 746
+      button: left
+    after_button_click_wait_seconds: 0.8
+    return_to_farm:
+      enabled: true
+      actions:
+      - action: press
+        key: r
+        hold_seconds: 0.08
+        after_wait_seconds: 0.8
+      - action: hold
+        key: s
+        hold_seconds: 3.2
+        after_wait_seconds: 1.0
+      verify_scene:
+        enabled: true
+        roi:
+        - 70
+        - 10
+        - 210
+        - 55
+        contains:
+        - 的农场
+      after_wait_seconds: 0.5
+  processor:
+    enabled: true
+    task_max_attempts: 2
+    full_retry_wait_seconds: 0.5
+    move_recording:
+      enabled: true
+      path: assets/recordings/recording_20260710_110404_processor_move.json
+      include_mouse: true
+      ignore_keys: []
+      speed: 1.0
+      max_initial_wait_seconds: 1.5
+    after_move_wait_seconds: 0.5
+    move_verification:
+      enabled: true
+      validation_status: offline_verified_1920x1080
+      expected: present
+      recognition_source: ocr
+      roi:
+      - 70
+      - 10
+      - 240
+      - 55
+      contains:
+      - 的小屋
+      save_roi: true
+      max_wait_seconds: 15.0
+      interval_seconds: 0.5
+    collect_recording:
+      enabled: true
+      path: assets/recordings/recording_20260710_151930.json
+      include_mouse: true
+      ignore_keys: []
+      speed: 1.0
+      max_initial_wait_seconds: 1.5
+    after_collect_wait_seconds: 0.5
+    collect_max_attempts: 1
+    collect_verification:
+      enabled: true
+      validation_status: pending_live_test
+      expected: present
+      recognition_source: ocr
+      roi:
+      - 85
+      - 15
+      - 220
+      - 55
+      contains:
+      - 的农场
+      save_roi: true
+      max_wait_seconds: 15.0
+      interval_seconds: 0.5
+    completion_verification:
+      enabled: true
+      validation_status: pending_live_test
+      expected: absent
+      recognition_source: detector
+      match_any:
+      - harvest
+      match_regions:
+        harvest:
+        - 63
+        - 93
+        - 165
+        - 118
+      consecutive_frames: 2
+      max_wait_seconds: 3.0
+      interval_seconds: 0.5
+  marker_sequence:
+    max_steps: null
+    wait_for_initial_f9: true
+    recognition_source: hybrid
+    scan_wait_seconds: 0.2
+    exclude_overlay_region: true
+    exclude_regions: []
+    capture_after_action: true
+    steps:
+    - name: fish_card_click
+      enabled: true
+      repeatable: true
+      priority: 1000
+      priority_over_run_count: true
+      count_toward_max_steps: false
+      recognition_source: ocr
+      match_any:
+      - fish_card_result
+      action: click_until_gone
+      max_clicks: 5
+      after_click_wait_seconds: 0.5
+      wait_for_rescan_on_failure: true
+      capture_after_action: false
+      reset_before_start:
+        enabled: false
+      reset_after_finish:
+        enabled: false
+      reset_after_failure:
+        enabled: false
+    - name: farm_field_latest
+      enabled: true
+      repeatable: true
+      priority: 500
+      match_any:
+      - watering
+      - harvest
+      match_regions:
+        watering:
+        - 25
+        - 130
+        - 875
+        - 355
+        harvest:
+        - 25
+        - 175
+        - 875
+        - 310
+      match_exclude_regions:
+        harvest:
+        - 80
+        - 100
+        - 150
+        - 130
+      action: replay
+      reset_before_start:
+        enabled: false
+      reset_after_finish:
+        enabled: false
+      recording_replay:
+        enabled: true
+        source: farm_field_latest_104821
+        include_mouse: true
+        ignore_keys: []
+        speed: 1.0
+        max_initial_wait_seconds: 1.5
+    - name: fishpond_latest
+      enabled: true
+      repeatable: true
+      priority: 400
+      match_any:
+      - fishing
+      action: replay
+      wait_for_rescan_on_failure: true
+      reset_before_start:
+        enabled: false
+      reset_after_finish:
+        enabled: false
+      recording_replay:
+        enabled: true
+        source: fishpond_latest_110224
+        include_mouse: true
+        ignore_keys: []
+        speed: 1.0
+        max_initial_wait_seconds: 1.5
+        match_waits:
+        - label: fish_card_result
+          recognition_source: ocr
+          t_ms: 19668
+          resume_t_ms: 23050
+          duration_seconds: 60.0
+          interval_seconds: 2.0
+          match_any:
+          - fish_card_result
+          click_on_match: true
+          click_until_gone: true
+          stop_on_match: true
+          max_clicks: 5
+          after_click_wait_seconds: 0.5
+    - name: pasture_latest
+      enabled: true
+      repeatable: true
+      priority: 300
+      match_any:
+      - midwifery
+      - harvest
+      match_regions:
+        midwifery:
+        - 840
+        - 120
+        - 760
+        - 580
+        harvest:
+        - 840
+        - 120
+        - 760
+        - 580
+      action: replay
+      reset_before_start:
+        enabled: false
+      reset_after_finish:
+        enabled: false
+      recording_replay:
+        enabled: true
+        source: pasture_latest_110127
+        include_mouse: false
+        ignore_keys: []
+        speed: 1.0
+        max_initial_wait_seconds: 1.5
+    - name: processor_latest
+      enabled: true
+      repeatable: false
+      skip_on_failure: false
+      mark_completed_on_failure: false
+      wait_for_rescan_on_failure: true
+      priority: 200
+      match_any:
+      - harvest
+      match_regions:
+        harvest:
+        - 63
+        - 93
+        - 165
+        - 118
+      action: processor
+      reset_before_start:
+        enabled: false
+      reset_after_finish:
+        enabled: false
+      reset_after_failure:
+        enabled: false
+    - name: restaurant_service_latest
+      enabled: false
+      repeatable: false
+      priority: 50
+      match_any:
+      - farm_header
+      action: restaurant_service
+      skip_on_precheck_failure: true
+      reset_before_start:
+        enabled: true
+        key: r
+        hold_seconds: 0.08
+        wait_seconds: 0.5
+      reset_after_finish:
+        enabled: false
+      reset_after_failure:
+        enabled: false

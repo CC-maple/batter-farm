@@ -1,0 +1,1311 @@
+{
+  "version": 1,
+  "recording_mode": "input_only",
+  "window": {
+    "title": "元梦之星-山海寻灵",
+    "hwnd": 2752616,
+    "capture_origin": [
+      160,
+      70
+    ],
+    "capture_region": [
+      160,
+      70,
+      1600,
+      900
+    ],
+    "coordinate_source": "screen_to_client"
+  },
+  "screen_size": [
+    1920,
+    1080
+  ],
+  "move_sample_ms": 10,
+  "stop_key": "f10",
+  "mark_key": "f9",
+  "started_at": "2026-07-10T11:04:04",
+  "screenshot_mode": "none",
+  "source_recording": "logs/recordings/recording_20260710_110404.json",
+  "session_id": "20260710_110404_processor_move",
+  "duration_ms": 29611,
+  "source_range_ms": [
+    0,
+    29611
+  ],
+  "timestamps_rebased": false,
+  "events": [
+    {
+      "type": "session_start",
+      "t_ms": 0
+    },
+    {
+      "type": "key_down",
+      "key": "r",
+      "keys": [
+        "r"
+      ],
+      "t_ms": 4685
+    },
+    {
+      "type": "key_up",
+      "key": "r",
+      "keys": [],
+      "t_ms": 4773
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 5231
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 6784
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 7699
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 9101
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 9409
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 11831
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 12072
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 14313
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 14802
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 15581
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 15950
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 16196
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 17291
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 17465
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 17659
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 17884
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 23765
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 24147
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 24320
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 24950
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 25122
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 25369
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 25513
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 26068
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        963,
+        523
+      ],
+      "buttons": [],
+      "t_ms": 28216,
+      "client": [
+        803,
+        453
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        966,
+        523
+      ],
+      "buttons": [],
+      "t_ms": 28226,
+      "client": [
+        806,
+        453
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        970,
+        524
+      ],
+      "buttons": [],
+      "t_ms": 28236,
+      "client": [
+        810,
+        454
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        975,
+        524
+      ],
+      "buttons": [],
+      "t_ms": 28247,
+      "client": [
+        815,
+        454
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        979,
+        524
+      ],
+      "buttons": [],
+      "t_ms": 28260,
+      "client": [
+        819,
+        454
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        985,
+        524
+      ],
+      "buttons": [],
+      "t_ms": 28271,
+      "client": [
+        825,
+        454
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        990,
+        522
+      ],
+      "buttons": [],
+      "t_ms": 28283,
+      "client": [
+        830,
+        452
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        994,
+        520
+      ],
+      "buttons": [],
+      "t_ms": 28293,
+      "client": [
+        834,
+        450
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        998,
+        518
+      ],
+      "buttons": [],
+      "t_ms": 28305,
+      "client": [
+        838,
+        448
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1002,
+        516
+      ],
+      "buttons": [],
+      "t_ms": 28317,
+      "client": [
+        842,
+        446
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1003,
+        515
+      ],
+      "buttons": [],
+      "t_ms": 28328,
+      "client": [
+        843,
+        445
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1005,
+        513
+      ],
+      "buttons": [],
+      "t_ms": 28339,
+      "client": [
+        845,
+        443
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1008,
+        510
+      ],
+      "buttons": [],
+      "t_ms": 28350,
+      "client": [
+        848,
+        440
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1014,
+        504
+      ],
+      "buttons": [],
+      "t_ms": 28361,
+      "client": [
+        854,
+        434
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1022,
+        494
+      ],
+      "buttons": [],
+      "t_ms": 28372,
+      "client": [
+        862,
+        424
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1031,
+        482
+      ],
+      "buttons": [],
+      "t_ms": 28383,
+      "client": [
+        871,
+        412
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1037,
+        476
+      ],
+      "buttons": [],
+      "t_ms": 28393,
+      "client": [
+        877,
+        406
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1043,
+        469
+      ],
+      "buttons": [],
+      "t_ms": 28404,
+      "client": [
+        883,
+        399
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1049,
+        463
+      ],
+      "buttons": [],
+      "t_ms": 28415,
+      "client": [
+        889,
+        393
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1054,
+        457
+      ],
+      "buttons": [],
+      "t_ms": 28425,
+      "client": [
+        894,
+        387
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1060,
+        453
+      ],
+      "buttons": [],
+      "t_ms": 28435,
+      "client": [
+        900,
+        383
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1065,
+        449
+      ],
+      "buttons": [],
+      "t_ms": 28445,
+      "client": [
+        905,
+        379
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1072,
+        444
+      ],
+      "buttons": [],
+      "t_ms": 28456,
+      "client": [
+        912,
+        374
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1077,
+        440
+      ],
+      "buttons": [],
+      "t_ms": 28467,
+      "client": [
+        917,
+        370
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1083,
+        436
+      ],
+      "buttons": [],
+      "t_ms": 28477,
+      "client": [
+        923,
+        366
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1089,
+        432
+      ],
+      "buttons": [],
+      "t_ms": 28488,
+      "client": [
+        929,
+        362
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1094,
+        428
+      ],
+      "buttons": [],
+      "t_ms": 28499,
+      "client": [
+        934,
+        358
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1099,
+        425
+      ],
+      "buttons": [],
+      "t_ms": 28509,
+      "client": [
+        939,
+        355
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1102,
+        422
+      ],
+      "buttons": [],
+      "t_ms": 28522,
+      "client": [
+        942,
+        352
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1102,
+        422
+      ],
+      "buttons": [],
+      "t_ms": 28548,
+      "client": [
+        942,
+        352
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1100,
+        421
+      ],
+      "buttons": [],
+      "t_ms": 28558,
+      "client": [
+        940,
+        351
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1097,
+        421
+      ],
+      "buttons": [],
+      "t_ms": 28569,
+      "client": [
+        937,
+        351
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1093,
+        421
+      ],
+      "buttons": [],
+      "t_ms": 28580,
+      "client": [
+        933,
+        351
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1088,
+        422
+      ],
+      "buttons": [],
+      "t_ms": 28591,
+      "client": [
+        928,
+        352
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1084,
+        424
+      ],
+      "buttons": [],
+      "t_ms": 28601,
+      "client": [
+        924,
+        354
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1080,
+        425
+      ],
+      "buttons": [],
+      "t_ms": 28612,
+      "client": [
+        920,
+        355
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1076,
+        427
+      ],
+      "buttons": [],
+      "t_ms": 28622,
+      "client": [
+        916,
+        357
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1070,
+        428
+      ],
+      "buttons": [],
+      "t_ms": 28633,
+      "client": [
+        910,
+        358
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1064,
+        430
+      ],
+      "buttons": [],
+      "t_ms": 28643,
+      "client": [
+        904,
+        360
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1057,
+        432
+      ],
+      "buttons": [],
+      "t_ms": 28653,
+      "client": [
+        897,
+        362
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1051,
+        434
+      ],
+      "buttons": [],
+      "t_ms": 28665,
+      "client": [
+        891,
+        364
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1044,
+        436
+      ],
+      "buttons": [],
+      "t_ms": 28675,
+      "client": [
+        884,
+        366
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1040,
+        437
+      ],
+      "buttons": [],
+      "t_ms": 28686,
+      "client": [
+        880,
+        367
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1037,
+        439
+      ],
+      "buttons": [],
+      "t_ms": 28697,
+      "client": [
+        877,
+        369
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1035,
+        440
+      ],
+      "buttons": [],
+      "t_ms": 28709,
+      "client": [
+        875,
+        370
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1032,
+        441
+      ],
+      "buttons": [],
+      "t_ms": 28722,
+      "client": [
+        872,
+        371
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1031,
+        442
+      ],
+      "buttons": [],
+      "t_ms": 28735,
+      "client": [
+        871,
+        372
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1029,
+        443
+      ],
+      "buttons": [],
+      "t_ms": 28746,
+      "client": [
+        869,
+        373
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1027,
+        444
+      ],
+      "buttons": [],
+      "t_ms": 28760,
+      "client": [
+        867,
+        374
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1024,
+        446
+      ],
+      "buttons": [],
+      "t_ms": 28772,
+      "client": [
+        864,
+        376
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1021,
+        448
+      ],
+      "buttons": [],
+      "t_ms": 28784,
+      "client": [
+        861,
+        378
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1018,
+        449
+      ],
+      "buttons": [],
+      "t_ms": 28794,
+      "client": [
+        858,
+        379
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1015,
+        451
+      ],
+      "buttons": [],
+      "t_ms": 28808,
+      "client": [
+        855,
+        381
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1008,
+        453
+      ],
+      "buttons": [],
+      "t_ms": 28818,
+      "client": [
+        848,
+        383
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1003,
+        455
+      ],
+      "buttons": [],
+      "t_ms": 28829,
+      "client": [
+        843,
+        385
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        998,
+        456
+      ],
+      "buttons": [],
+      "t_ms": 28839,
+      "client": [
+        838,
+        386
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        992,
+        458
+      ],
+      "buttons": [],
+      "t_ms": 28849,
+      "client": [
+        832,
+        388
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        987,
+        460
+      ],
+      "buttons": [],
+      "t_ms": 28860,
+      "client": [
+        827,
+        390
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        981,
+        461
+      ],
+      "buttons": [],
+      "t_ms": 28870,
+      "client": [
+        821,
+        391
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        976,
+        462
+      ],
+      "buttons": [],
+      "t_ms": 28881,
+      "client": [
+        816,
+        392
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        972,
+        464
+      ],
+      "buttons": [],
+      "t_ms": 28891,
+      "client": [
+        812,
+        394
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        968,
+        465
+      ],
+      "buttons": [],
+      "t_ms": 28902,
+      "client": [
+        808,
+        395
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        964,
+        466
+      ],
+      "buttons": [],
+      "t_ms": 28913,
+      "client": [
+        804,
+        396
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        960,
+        466
+      ],
+      "buttons": [],
+      "t_ms": 28924,
+      "client": [
+        800,
+        396
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        956,
+        468
+      ],
+      "buttons": [],
+      "t_ms": 28934,
+      "client": [
+        796,
+        398
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        952,
+        468
+      ],
+      "buttons": [],
+      "t_ms": 28944,
+      "client": [
+        792,
+        398
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        950,
+        469
+      ],
+      "buttons": [],
+      "t_ms": 28955,
+      "client": [
+        790,
+        399
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        947,
+        470
+      ],
+      "buttons": [],
+      "t_ms": 28967,
+      "client": [
+        787,
+        400
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        946,
+        470
+      ],
+      "buttons": [],
+      "t_ms": 28977,
+      "client": [
+        786,
+        400
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        944,
+        470
+      ],
+      "buttons": [],
+      "t_ms": 28991,
+      "client": [
+        784,
+        400
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        943,
+        471
+      ],
+      "buttons": [],
+      "t_ms": 29002,
+      "client": [
+        783,
+        401
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        940,
+        472
+      ],
+      "buttons": [],
+      "t_ms": 29012,
+      "client": [
+        780,
+        402
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        938,
+        472
+      ],
+      "buttons": [],
+      "t_ms": 29024,
+      "client": [
+        778,
+        402
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        936,
+        472
+      ],
+      "buttons": [],
+      "t_ms": 29034,
+      "client": [
+        776,
+        402
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        935,
+        473
+      ],
+      "buttons": [],
+      "t_ms": 29057,
+      "client": [
+        775,
+        403
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        935,
+        473
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 29513,
+      "client": [
+        775,
+        403
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        935,
+        473
+      ],
+      "buttons": [],
+      "t_ms": 29611,
+      "client": [
+        775,
+        403
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "session_stop",
+      "key": "split_boundary",
+      "t_ms": 29611
+    }
+  ]
+}

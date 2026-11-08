@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "recording_type": "camera_turn",
+  "session_id": "20260710_120713",
+  "started_at": "2026-07-10T12:07:13",
+  "duration_ms": 19437,
+  "mode": "visible",
+  "window": {
+    "title": "元梦之星-山海寻灵",
+    "hwnd": 2752616,
+    "client_origin": [
+      160,
+      70
+    ]
+  },
+  "settings": {
+    "step_dx": 4,
+    "interval_ms": 10,
+    "anchor_client": [
+      800,
+      450
+    ],
+    "segment_ms": 250,
+    "segment_gap_ms": 30,
+    "invert": false
+  },
+  "events": [
+    {
+      "t_ms": 2093,
+      "type": "camera_turn",
+      "mode": "visible",
+      "direction": "left",
+      "duration_ms": 1875
+    },
+    {
+      "t_ms": 7171,
+      "type": "camera_turn",
+      "mode": "visible",
+      "direction": "left",
+      "duration_ms": 485
+    },
+    {
+      "t_ms": 11000,
+      "type": "camera_turn",
+      "mode": "visible",
+      "direction": "right",
+      "duration_ms": 687
+    },
+    {
+      "t_ms": 13390,
+      "type": "camera_turn",
+      "mode": "visible",
+      "direction": "left",
+      "duration_ms": 656
+    }
+  ]
+}

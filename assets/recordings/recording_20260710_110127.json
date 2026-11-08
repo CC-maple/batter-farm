@@ -1,0 +1,673 @@
+{
+  "version": 1,
+  "session_id": "20260710_110127",
+  "started_at": "2026-07-10T11:01:27",
+  "duration_ms": 35877,
+  "recording_mode": "input_only",
+  "window": {
+    "title": "元梦之星-山海寻灵",
+    "hwnd": 2752616,
+    "capture_origin": [
+      160,
+      70
+    ],
+    "capture_region": [
+      160,
+      70,
+      1600,
+      900
+    ],
+    "coordinate_source": "screen_to_client"
+  },
+  "screen_size": [
+    1920,
+    1080
+  ],
+  "stop_key": "f10",
+  "mark_key": "f9",
+  "move_sample_ms": 10,
+  "screenshot_mode": "none",
+  "events": [
+    {
+      "type": "session_start",
+      "t_ms": 523
+    },
+    {
+      "type": "key_down",
+      "key": "r",
+      "keys": [
+        "r"
+      ],
+      "t_ms": 1926
+    },
+    {
+      "type": "key_up",
+      "key": "r",
+      "keys": [],
+      "t_ms": 2015
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 2584
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 4076
+    },
+    {
+      "type": "key_down",
+      "key": "q",
+      "keys": [
+        "q"
+      ],
+      "t_ms": 4541
+    },
+    {
+      "type": "key_up",
+      "key": "q",
+      "keys": [],
+      "t_ms": 4654
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 5073
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "d",
+        "w"
+      ],
+      "t_ms": 5808
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 5890
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d",
+        "w"
+      ],
+      "t_ms": 6190
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 6228
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "keys": [
+        "d",
+        "s"
+      ],
+      "t_ms": 7084
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [
+        "s"
+      ],
+      "t_ms": 7211
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "keys": [],
+      "t_ms": 7315
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 7669
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "keys": [
+        "d",
+        "s"
+      ],
+      "t_ms": 7975
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 8763
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 8951
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "keys": [
+        "s"
+      ],
+      "t_ms": 9230
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "keys": [],
+      "t_ms": 9426
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "keys": [
+        "s"
+      ],
+      "t_ms": 9671
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "keys": [],
+      "t_ms": 9807
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 10054
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 11231
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 11486
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d",
+        "w"
+      ],
+      "t_ms": 11786
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 12370
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 12463
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 12821
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 14043
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 14374
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 14658
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 14936
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "a",
+        "w"
+      ],
+      "t_ms": 15379
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 15536
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 15828
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 16407
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d",
+        "w"
+      ],
+      "t_ms": 16819
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 17059
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d",
+        "w"
+      ],
+      "t_ms": 17539
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 17727
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 17921
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 18386
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "keys": [
+        "d",
+        "s"
+      ],
+      "t_ms": 18852
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [
+        "s"
+      ],
+      "t_ms": 18880
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "keys": [],
+      "t_ms": 19421
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 19646
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 19894
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "keys": [
+        "s"
+      ],
+      "t_ms": 20148
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "keys": [],
+      "t_ms": 20329
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "keys": [
+        "s"
+      ],
+      "t_ms": 20563
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "keys": [],
+      "t_ms": 20616
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 20787
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 22153
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 22594
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d",
+        "w"
+      ],
+      "t_ms": 22953
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 23294
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 23512
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 23959
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 25287
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 25677
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 25969
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 26331
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 27230
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 27516
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 28378
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 28590
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 28938
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 29126
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 29413
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 29712
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 30328
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "keys": [
+        "s"
+      ],
+      "t_ms": 30552
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "keys": [],
+      "t_ms": 30814
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 31009
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 31819
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "keys": [
+        "s"
+      ],
+      "t_ms": 31979
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "keys": [],
+      "t_ms": 32093
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 32228
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 32846
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "keys": [
+        "s"
+      ],
+      "t_ms": 32983
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "keys": [],
+      "t_ms": 33251
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 33380
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 33883
+    },
+    {
+      "type": "key_down",
+      "key": "r",
+      "keys": [
+        "r"
+      ],
+      "t_ms": 34362
+    },
+    {
+      "type": "key_up",
+      "key": "r",
+      "keys": [],
+      "t_ms": 34437
+    },
+    {
+      "type": "session_stop",
+      "key": "f10",
+      "t_ms": 35877
+    }
+  ]
+}

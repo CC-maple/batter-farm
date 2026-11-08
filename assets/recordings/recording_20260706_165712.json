@@ -1,0 +1,2344 @@
+{
+  "version": 1,
+  "session_id": "20260706_165712",
+  "started_at": "2026-07-06T16:57:12",
+  "duration_ms": 68642,
+  "window": {
+    "title": "元梦之星-山海寻灵",
+    "hwnd": 264126,
+    "capture_origin": [
+      160,
+      70
+    ],
+    "capture_region": [
+      160,
+      70,
+      1600,
+      900
+    ]
+  },
+  "screen_size": [
+    1920,
+    1080
+  ],
+  "stop_key": "f10",
+  "mark_key": "f9",
+  "move_sample_ms": 50,
+  "screenshot_mode": "important",
+  "events": [
+    {
+      "type": "session_start",
+      "t_ms": 582,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0000613_session_start.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1155,
+        929
+      ],
+      "buttons": [],
+      "t_ms": 1261,
+      "client": [
+        995,
+        859
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1137,
+        881
+      ],
+      "buttons": [],
+      "t_ms": 1317,
+      "client": [
+        977,
+        811
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1124,
+        804
+      ],
+      "buttons": [],
+      "t_ms": 1368,
+      "client": [
+        964,
+        734
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1124,
+        780
+      ],
+      "buttons": [],
+      "t_ms": 1419,
+      "client": [
+        964,
+        710
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1125,
+        762
+      ],
+      "buttons": [],
+      "t_ms": 1471,
+      "client": [
+        965,
+        692
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1125,
+        751
+      ],
+      "buttons": [],
+      "t_ms": 1526,
+      "client": [
+        965,
+        681
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 1478,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0001507_key_down_w.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1125,
+        749
+      ],
+      "buttons": [],
+      "t_ms": 1605,
+      "client": [
+        965,
+        679
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1127,
+        743
+      ],
+      "buttons": [],
+      "t_ms": 1679,
+      "client": [
+        967,
+        673
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1128,
+        741
+      ],
+      "buttons": [],
+      "t_ms": 2046,
+      "client": [
+        968,
+        671
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 1979,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0002014_key_down_w.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1131,
+        735
+      ],
+      "buttons": [],
+      "t_ms": 2103,
+      "client": [
+        971,
+        665
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 2065,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0002098_key_down_w.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1133,
+        732
+      ],
+      "buttons": [],
+      "t_ms": 2161,
+      "client": [
+        973,
+        662
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 2140,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0002171_key_down_w.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1139,
+        724
+      ],
+      "buttons": [],
+      "t_ms": 2247,
+      "client": [
+        979,
+        654
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 2213,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0002241_key_down_w.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1142,
+        721
+      ],
+      "buttons": [],
+      "t_ms": 2307,
+      "client": [
+        982,
+        651
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 2284,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0002317_key_down_w.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1149,
+        709
+      ],
+      "buttons": [],
+      "t_ms": 2375,
+      "client": [
+        989,
+        639
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1158,
+        688
+      ],
+      "buttons": [],
+      "t_ms": 2427,
+      "client": [
+        998,
+        618
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 2358,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0002385_key_down_w.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1166,
+        677
+      ],
+      "buttons": [],
+      "t_ms": 2480,
+      "client": [
+        1006,
+        607
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 2428,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0002452_key_down_w.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1180,
+        657
+      ],
+      "buttons": [],
+      "t_ms": 2532,
+      "client": [
+        1020,
+        587
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 2492,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0002523_key_down_w.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1192,
+        644
+      ],
+      "buttons": [],
+      "t_ms": 2583,
+      "client": [
+        1032,
+        574
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 2563,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0002592_key_down_w.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1216,
+        614
+      ],
+      "buttons": [],
+      "t_ms": 2646,
+      "client": [
+        1056,
+        544
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 2630,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0002654_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 2695
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1242,
+        592
+      ],
+      "buttons": [],
+      "t_ms": 2698,
+      "client": [
+        1082,
+        522
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1256,
+        581
+      ],
+      "buttons": [],
+      "t_ms": 2748,
+      "client": [
+        1096,
+        511
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1273,
+        569
+      ],
+      "buttons": [],
+      "t_ms": 2799,
+      "client": [
+        1113,
+        499
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "left",
+      "screen": [
+        1282,
+        563
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3162,
+      "client": [
+        1122,
+        493
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0003191_mouse_down_left.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1281,
+        563
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3233,
+      "client": [
+        1121,
+        493
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1251,
+        566
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3285,
+      "client": [
+        1091,
+        496
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1211,
+        570
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3336,
+      "client": [
+        1051,
+        500
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1168,
+        577
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3387,
+      "client": [
+        1008,
+        507
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1134,
+        579
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3437,
+      "client": [
+        974,
+        509
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1092,
+        579
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3488,
+      "client": [
+        932,
+        509
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1063,
+        579
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3538,
+      "client": [
+        903,
+        509
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1030,
+        579
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3591,
+      "client": [
+        870,
+        509
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1005,
+        579
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3642,
+      "client": [
+        845,
+        509
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        964,
+        578
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3694,
+      "client": [
+        804,
+        508
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        935,
+        575
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3745,
+      "client": [
+        775,
+        505
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        903,
+        571
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3796,
+      "client": [
+        743,
+        501
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        878,
+        568
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3848,
+      "client": [
+        718,
+        498
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        850,
+        565
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3901,
+      "client": [
+        690,
+        495
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        827,
+        563
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 3954,
+      "client": [
+        667,
+        493
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        798,
+        558
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4005,
+      "client": [
+        638,
+        488
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        771,
+        553
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4056,
+      "client": [
+        611,
+        483
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        748,
+        548
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4107,
+      "client": [
+        588,
+        478
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        737,
+        546
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4161,
+      "client": [
+        577,
+        476
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        713,
+        543
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4211,
+      "client": [
+        553,
+        473
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        694,
+        540
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4262,
+      "client": [
+        534,
+        470
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        676,
+        538
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4318,
+      "client": [
+        516,
+        468
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        667,
+        537
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4369,
+      "client": [
+        507,
+        467
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        653,
+        536
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4423,
+      "client": [
+        493,
+        466
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        649,
+        536
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4478,
+      "client": [
+        489,
+        466
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        646,
+        536
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4579,
+      "client": [
+        486,
+        466
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        643,
+        536
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4646,
+      "client": [
+        483,
+        466
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        639,
+        534
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 4699,
+      "client": [
+        479,
+        464
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "left",
+      "screen": [
+        639,
+        534
+      ],
+      "buttons": [],
+      "t_ms": 4987,
+      "client": [
+        479,
+        464
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0005014_mouse_up_left.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 5516,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0005545_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6016,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006046_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6085,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006112_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6151,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006182_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6221,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006244_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6284,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006313_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6353,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006387_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6437,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006466_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6507,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006535_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6580,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006612_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6656,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006685_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6727,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006762_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6802,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006829_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6871,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006901_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 6941,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0006969_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 7011,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0007042_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 7083,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0007113_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 7153,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0007186_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 7225,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0007253_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 7292
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 7933,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0007962_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 8433,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0008458_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 8496,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0008521_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 8559,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0008585_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 8623,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0008646_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 8685,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0008713_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 8754
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 9596,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0009624_key_down_a.png"
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 9884
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 10347,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0010381_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 10658
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 11165,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0011191_key_down_a.png"
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 11364
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 11548,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0011582_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 11909
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 12169,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0012196_key_down_a.png"
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 12441
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 12719,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0012746_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 13014
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 13199,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0013224_key_down_a.png"
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 13591
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 13906,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0013935_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 13996
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 14321,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0014349_key_down_a.png"
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 14461
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 14698,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0014723_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 14854
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 15062,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0015099_key_down_a.png"
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 15197
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 15526,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0015554_key_down_w.png"
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 15593,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0015620_key_down_a.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 15658
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 15684
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 16191,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0016221_key_down_a.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 16262,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0016304_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 16345
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 16355
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 16704,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0016730_key_down_a.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 16768,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0016792_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 16913
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 16916
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 17201,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0017231_key_down_a.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 17275,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0017308_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 17471
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 17490
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 17902,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0017934_key_down_a.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 17973,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0018000_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 18169
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 18178
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 18697,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0018726_key_down_a.png"
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 18846
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 19130,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0019160_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 19290
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 19452,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0019480_key_down_a.png"
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 19703
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        639,
+        538
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 21940,
+      "client": [
+        479,
+        468
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0021967_mouse_down_right.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        638,
+        534
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 22007,
+      "client": [
+        478,
+        464
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        634,
+        534
+      ],
+      "buttons": [],
+      "t_ms": 22008,
+      "client": [
+        474,
+        464
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0022038_mouse_up_right.png"
+    },
+    {
+      "type": "mark",
+      "key": "f9",
+      "t_ms": 29109,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0029140_mark.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        635,
+        534
+      ],
+      "buttons": [],
+      "t_ms": 29859,
+      "client": [
+        475,
+        464
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        678,
+        559
+      ],
+      "buttons": [],
+      "t_ms": 29910,
+      "client": [
+        518,
+        489
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        740,
+        600
+      ],
+      "buttons": [],
+      "t_ms": 29960,
+      "client": [
+        580,
+        530
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        816,
+        637
+      ],
+      "buttons": [],
+      "t_ms": 30012,
+      "client": [
+        656,
+        567
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        850,
+        650
+      ],
+      "buttons": [],
+      "t_ms": 30063,
+      "client": [
+        690,
+        580
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        886,
+        662
+      ],
+      "buttons": [],
+      "t_ms": 30114,
+      "client": [
+        726,
+        592
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        923,
+        675
+      ],
+      "buttons": [],
+      "t_ms": 30165,
+      "client": [
+        763,
+        605
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        934,
+        685
+      ],
+      "buttons": [],
+      "t_ms": 30215,
+      "client": [
+        774,
+        615
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        948,
+        698
+      ],
+      "buttons": [],
+      "t_ms": 30266,
+      "client": [
+        788,
+        628
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        949,
+        701
+      ],
+      "buttons": [],
+      "t_ms": 30319,
+      "client": [
+        789,
+        631
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        953,
+        708
+      ],
+      "buttons": [],
+      "t_ms": 30385,
+      "client": [
+        793,
+        638
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        956,
+        713
+      ],
+      "buttons": [],
+      "t_ms": 30515,
+      "client": [
+        796,
+        643
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "left",
+      "screen": [
+        956,
+        715
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 30607,
+      "client": [
+        796,
+        645
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0030644_mouse_down_left.png"
+    },
+    {
+      "type": "mouse_up",
+      "button": "left",
+      "screen": [
+        956,
+        715
+      ],
+      "buttons": [],
+      "t_ms": 30681,
+      "client": [
+        796,
+        645
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0030709_mouse_up_left.png"
+    },
+    {
+      "type": "mark",
+      "key": "f9",
+      "t_ms": 33311,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0033338_mark.png"
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 36308,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0036334_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 36594
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "t_ms": 36869,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0036898_key_down_d.png"
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "t_ms": 37220
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "t_ms": 37634,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0037662_key_down_d.png"
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "t_ms": 38117
+    },
+    {
+      "type": "key_down",
+      "key": "space",
+      "t_ms": 38517,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0038545_key_down_space.png"
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "t_ms": 38581,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0038604_key_down_d.png"
+    },
+    {
+      "type": "key_up",
+      "key": "space",
+      "t_ms": 38974
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "t_ms": 39163
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "t_ms": 40945,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0040973_key_down_a.png"
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "t_ms": 41093
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "t_ms": 41283,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0041315_key_down_w.png"
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "t_ms": 41605
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "t_ms": 41981,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0042018_key_down_d.png"
+    },
+    {
+      "type": "key_down",
+      "key": "space",
+      "t_ms": 42057,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0042088_key_down_space.png"
+    },
+    {
+      "type": "key_up",
+      "key": "space",
+      "t_ms": 42291
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "t_ms": 42422
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "t_ms": 43150,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0043175_key_down_d.png"
+    },
+    {
+      "type": "key_down",
+      "key": "space",
+      "t_ms": 43214,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0043248_key_down_space.png"
+    },
+    {
+      "type": "key_up",
+      "key": "space",
+      "t_ms": 43513
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "t_ms": 43722
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        956,
+        714
+      ],
+      "buttons": [],
+      "t_ms": 44922,
+      "client": [
+        796,
+        644
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        958,
+        702
+      ],
+      "buttons": [],
+      "t_ms": 44973,
+      "client": [
+        798,
+        632
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        959,
+        692
+      ],
+      "buttons": [],
+      "t_ms": 45025,
+      "client": [
+        799,
+        622
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        959,
+        689
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 49863,
+      "client": [
+        799,
+        619
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0049889_mouse_down_right.png"
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        959,
+        689
+      ],
+      "buttons": [],
+      "t_ms": 49975,
+      "client": [
+        799,
+        619
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0050005_mouse_up_right.png"
+    },
+    {
+      "type": "mark",
+      "key": "f9",
+      "t_ms": 52019,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0052052_mark.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        960,
+        689
+      ],
+      "buttons": [],
+      "t_ms": 52565,
+      "client": [
+        800,
+        619
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        985,
+        690
+      ],
+      "buttons": [],
+      "t_ms": 52615,
+      "client": [
+        825,
+        620
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1034,
+        731
+      ],
+      "buttons": [],
+      "t_ms": 52665,
+      "client": [
+        874,
+        661
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1193,
+        800
+      ],
+      "buttons": [],
+      "t_ms": 52716,
+      "client": [
+        1033,
+        730
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1400,
+        860
+      ],
+      "buttons": [],
+      "t_ms": 52766,
+      "client": [
+        1240,
+        790
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1531,
+        879
+      ],
+      "buttons": [],
+      "t_ms": 52817,
+      "client": [
+        1371,
+        809
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1584,
+        885
+      ],
+      "buttons": [],
+      "t_ms": 52867,
+      "client": [
+        1424,
+        815
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1587,
+        885
+      ],
+      "buttons": [],
+      "t_ms": 52919,
+      "client": [
+        1427,
+        815
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1586,
+        866
+      ],
+      "buttons": [],
+      "t_ms": 52970,
+      "client": [
+        1426,
+        796
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1561,
+        841
+      ],
+      "buttons": [],
+      "t_ms": 53020,
+      "client": [
+        1401,
+        771
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1541,
+        827
+      ],
+      "buttons": [],
+      "t_ms": 53073,
+      "client": [
+        1381,
+        757
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1540,
+        826
+      ],
+      "buttons": [],
+      "t_ms": 53181,
+      "client": [
+        1380,
+        756
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1537,
+        819
+      ],
+      "buttons": [],
+      "t_ms": 53232,
+      "client": [
+        1377,
+        749
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "left",
+      "screen": [
+        1535,
+        816
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 53313,
+      "client": [
+        1375,
+        746
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0053340_mouse_down_left.png"
+    },
+    {
+      "type": "mouse_up",
+      "button": "left",
+      "screen": [
+        1535,
+        816
+      ],
+      "buttons": [],
+      "t_ms": 53399,
+      "client": [
+        1375,
+        746
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0053423_mouse_up_left.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1534,
+        816
+      ],
+      "buttons": [],
+      "t_ms": 53502,
+      "client": [
+        1374,
+        746
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1533,
+        816
+      ],
+      "buttons": [],
+      "t_ms": 53950,
+      "client": [
+        1373,
+        746
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1513,
+        811
+      ],
+      "buttons": [],
+      "t_ms": 54006,
+      "client": [
+        1353,
+        741
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1475,
+        799
+      ],
+      "buttons": [],
+      "t_ms": 54056,
+      "client": [
+        1315,
+        729
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mark",
+      "key": "f9",
+      "t_ms": 54609,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0054632_mark.png"
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1461,
+        797
+      ],
+      "buttons": [],
+      "t_ms": 55192,
+      "client": [
+        1301,
+        727
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1363,
+        760
+      ],
+      "buttons": [],
+      "t_ms": 55242,
+      "client": [
+        1203,
+        690
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1219,
+        688
+      ],
+      "buttons": [],
+      "t_ms": 55293,
+      "client": [
+        1059,
+        618
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1133,
+        658
+      ],
+      "buttons": [],
+      "t_ms": 55345,
+      "client": [
+        973,
+        588
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1128,
+        651
+      ],
+      "buttons": [],
+      "t_ms": 55400,
+      "client": [
+        968,
+        581
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1126,
+        649
+      ],
+      "buttons": [],
+      "t_ms": 55450,
+      "client": [
+        966,
+        579
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1115,
+        631
+      ],
+      "buttons": [],
+      "t_ms": 55502,
+      "client": [
+        955,
+        561
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1105,
+        619
+      ],
+      "buttons": [],
+      "t_ms": 55555,
+      "client": [
+        945,
+        549
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "left",
+      "screen": [
+        1104,
+        619
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 55720,
+      "client": [
+        944,
+        549
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0055745_mouse_down_left.png"
+    },
+    {
+      "type": "mouse_up",
+      "button": "left",
+      "screen": [
+        1104,
+        619
+      ],
+      "buttons": [],
+      "t_ms": 55815,
+      "client": [
+        944,
+        549
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0055842_mouse_up_left.png"
+    },
+    {
+      "type": "key_down",
+      "key": "r",
+      "t_ms": 58466,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0058496_key_down_r.png"
+    },
+    {
+      "type": "key_up",
+      "key": "r",
+      "t_ms": 58574
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "t_ms": 59528,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0059557_key_down_s.png"
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "t_ms": 60028,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0060057_key_down_s.png"
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "t_ms": 60091,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0060117_key_down_s.png"
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "t_ms": 60149,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0060174_key_down_s.png"
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "t_ms": 60205,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0060232_key_down_s.png"
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "t_ms": 60262,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0060297_key_down_s.png"
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "t_ms": 60331,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0060364_key_down_s.png"
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "t_ms": 60397,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0060429_key_down_s.png"
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "t_ms": 60461,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0060488_key_down_s.png"
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "t_ms": 60521,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0060550_key_down_s.png"
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "t_ms": 60580,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0060605_key_down_s.png"
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "t_ms": 60638
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1104,
+        619
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 61002,
+      "client": [
+        944,
+        549
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0061032_mouse_down_right.png"
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1105,
+        620
+      ],
+      "buttons": [],
+      "t_ms": 61099,
+      "client": [
+        945,
+        550
+      ],
+      "inside_client": true,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0061124_mouse_up_right.png"
+    },
+    {
+      "type": "key_down",
+      "key": "r",
+      "t_ms": 67014,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0067046_key_down_r.png"
+    },
+    {
+      "type": "key_up",
+      "key": "r",
+      "t_ms": 67088
+    },
+    {
+      "type": "session_stop",
+      "key": "f10",
+      "t_ms": 68575,
+      "screenshot": "logs\\recordings\\recording_20260706_165712_screens\\0068604_session_stop.png"
+    }
+  ]
+}

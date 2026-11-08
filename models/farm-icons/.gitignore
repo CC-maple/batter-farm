@@ -1,0 +1,8 @@
+# Generated model artifacts can be large.
+*.pt
+*.onnx
+*.engine
+*.tflite
+*.openvino
+metrics.json
+runs/

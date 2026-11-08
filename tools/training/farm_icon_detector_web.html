@@ -1,0 +1,1244 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BatterFarm Farm Icon Detector</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #64707d;
+      --line: #d8dde5;
+      --accent: #0f7a6c;
+      --accent-strong: #095f54;
+      --danger: #b3261e;
+      --shadow: 0 12px 30px rgba(22, 34, 51, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    .bar {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .model {
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+      overflow-wrap: anywhere;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 160px minmax(0, 1fr);
+      gap: 18px;
+    }
+
+    section {
+      min-width: 0;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .side-nav {
+      padding: 10px;
+      align-self: start;
+      display: grid;
+      gap: 8px;
+      position: sticky;
+      top: 16px;
+    }
+
+    .nav-button {
+      min-height: 38px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text);
+      text-align: left;
+      padding: 0 12px;
+      font-weight: 700;
+    }
+
+    .nav-button:hover,
+    .nav-button.is-active {
+      border-color: var(--line);
+      background: #eef8f5;
+      color: var(--accent-strong);
+    }
+
+    .page {
+      display: none;
+      min-width: 0;
+    }
+
+    .page.is-active {
+      display: block;
+    }
+
+    .page-grid.is-active {
+      display: grid;
+      grid-template-columns: 340px minmax(0, 1fr);
+      gap: 18px;
+    }
+
+    .controls {
+      padding: 16px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .drop {
+      min-height: 190px;
+      border: 2px dashed #aeb8c5;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      padding: 22px;
+      background: #fbfcfd;
+      color: var(--muted);
+      text-align: center;
+      transition: border-color 120ms ease, background 120ms ease;
+    }
+
+    .drop.is-dragging {
+      border-color: var(--accent);
+      background: #eef8f5;
+    }
+
+    .drop strong {
+      display: block;
+      color: var(--text);
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    .model-drop {
+      min-height: 130px;
+    }
+
+    .file-note {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 400;
+      overflow-wrap: anywhere;
+    }
+
+    input[type="file"] {
+      width: 100%;
+    }
+
+    label {
+      display: grid;
+      gap: 6px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: center;
+    }
+
+    input[type="range"],
+    select {
+      width: 100%;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 8px 10px;
+      background: #ffffff;
+      color: var(--text);
+      font: inherit;
+    }
+
+    select {
+      height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 0 10px;
+      background: #ffffff;
+      color: var(--text);
+    }
+
+    button {
+      min-height: 40px;
+      border: 0;
+      border-radius: 6px;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: var(--accent-strong);
+    }
+
+    button:disabled {
+      cursor: default;
+      opacity: 0.55;
+    }
+
+    .status {
+      min-height: 22px;
+      color: var(--muted);
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .status.error {
+      color: var(--danger);
+      font-weight: 600;
+    }
+
+    .result {
+      padding: 16px;
+      min-height: 520px;
+      display: grid;
+      grid-template-rows: auto minmax(300px, 1fr) auto;
+      gap: 14px;
+    }
+
+    .result-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .result-head h2 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .count {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .result-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .small-button {
+      min-height: 32px;
+      padding: 0 12px;
+      font-size: 13px;
+    }
+
+    .image-wrap {
+      width: 100%;
+      min-height: 320px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #101820;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .image-wrap:fullscreen {
+      width: 100vw;
+      height: 100vh;
+      border: 0;
+      border-radius: 0;
+      padding: 16px;
+      background: #080d12;
+    }
+
+    .image-wrap canvas {
+      display: block;
+      max-width: 100%;
+      max-height: 72vh;
+      cursor: crosshair;
+    }
+
+    .image-wrap:fullscreen canvas {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .placeholder {
+      color: #c6d0da;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .detection-picker {
+      display: grid;
+      gap: 8px;
+      min-height: 180px;
+    }
+
+    .detection-picker label {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .picker-toolbar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto auto auto auto;
+      gap: 8px;
+      align-items: end;
+    }
+
+    .text-toggle {
+      min-height: 32px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 0 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      background: #ffffff;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .text-toggle input {
+      margin: 0;
+    }
+
+    .detection-detail {
+      max-height: 220px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 4px 0;
+      background: #fbfcfd;
+      color: var(--text);
+      font-size: 13px;
+      overflow: auto;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-row {
+      display: grid;
+      grid-template-columns: auto 78px 76px minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+      padding: 7px 10px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .detail-row:last-child {
+      border-bottom: 0;
+    }
+
+    .detail-row.is-selected {
+      background: #e8f4ef;
+    }
+
+    .detail-row.is-hidden {
+      color: var(--muted);
+      opacity: 0.65;
+    }
+
+    .detail-row input {
+      margin: 0;
+    }
+
+    .detail-name {
+      font-weight: 700;
+    }
+
+    .detail-box {
+      overflow-wrap: anywhere;
+    }
+
+    .empty-detail {
+      padding: 12px;
+      color: var(--muted);
+    }
+
+    .launch-page {
+      padding: 16px;
+    }
+
+    .launch-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+      gap: 16px;
+    }
+
+    .field-group {
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .check-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .check-row input {
+      margin: 0;
+    }
+
+    .launch-actions {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
+    .run-summary {
+      min-height: 220px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 12px;
+      background: #fbfcfd;
+      color: var(--muted);
+      font-family: Consolas, "Microsoft YaHei", monospace;
+      font-size: 13px;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 880px) {
+      .bar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .model {
+        text-align: left;
+      }
+
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .side-nav {
+        position: static;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .page-grid.is-active,
+      .launch-grid,
+      .picker-toolbar {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <h1>BatterFarm Farm Icon Detector</h1>
+      <div id="modelInfo" class="model">model loading...</div>
+    </div>
+  </header>
+
+  <main>
+    <nav class="panel side-nav">
+      <button class="nav-button is-active" type="button" data-page="detectPage">图片推理</button>
+      <button class="nav-button" type="button" data-page="launchPage">主脚本</button>
+    </nav>
+
+    <div id="detectPage" class="page page-grid is-active">
+    <section class="panel controls">
+      <div id="modelDropZone" class="drop model-drop">
+        <div>
+          <strong>拖入权重文件</strong>
+          <span>.onnx / .pt，未选择时使用默认模型</span>
+          <div id="modelFileText" class="file-note">默认: models/farm-icons/best.onnx</div>
+        </div>
+      </div>
+
+      <input id="modelInput" type="file" accept=".onnx,.pt" />
+
+      <div id="imageDropZone" class="drop">
+        <div>
+          <strong>拖入图片</strong>
+          <span>选择本地截图，或 Ctrl+V 粘贴图片</span>
+          <div id="imageFileText" class="file-note">等待图片</div>
+        </div>
+      </div>
+
+      <input id="imageInput" type="file" accept="image/png,image/jpeg,image/bmp,image/webp" />
+
+      <label>
+        <span class="row"><span>置信度</span><span id="confText">0.25</span></span>
+        <input id="confInput" type="range" min="0.01" max="0.95" step="0.01" value="0.25" />
+      </label>
+
+      <label>
+        <span class="row"><span>IoU</span><span id="iouText">0.45</span></span>
+        <input id="iouInput" type="range" min="0.10" max="0.90" step="0.01" value="0.45" />
+      </label>
+
+      <label>
+        <span>图片尺寸</span>
+        <select id="imgszInput">
+          <option value="960" selected>960</option>
+          <option value="640">640</option>
+          <option value="1280">1280</option>
+        </select>
+      </label>
+
+      <button id="runButton" type="button" disabled>开始推理</button>
+      <div id="status" class="status">等待图片</div>
+    </section>
+
+    <section class="panel result">
+      <div class="result-head">
+        <h2>推理结果</h2>
+        <div class="result-actions">
+          <button id="fullscreenButton" class="small-button" type="button" disabled>全屏</button>
+          <div id="countText" class="count">0 detections</div>
+        </div>
+      </div>
+
+      <div id="imageWrap" class="image-wrap">
+        <div id="placeholder" class="placeholder">带框图片会显示在这里</div>
+        <canvas id="resultCanvas" hidden></canvas>
+      </div>
+
+      <div class="detection-picker">
+        <div class="picker-toolbar">
+          <label for="detectionSelect">
+            <span>检测框</span>
+            <select id="detectionSelect" disabled>
+              <option>暂无结果</option>
+            </select>
+          </label>
+          <button id="selectAllButton" class="small-button" type="button" disabled>全选</button>
+          <button id="hideSelectedButton" class="small-button" type="button" disabled>隐藏选中</button>
+          <button id="hideAllButton" class="small-button" type="button" disabled>隐藏全部</button>
+          <button id="showAllButton" class="small-button" type="button" disabled>显示全部</button>
+          <label class="text-toggle">
+            <input id="hideLabelsInput" type="checkbox" />
+            <span>隐藏文字</span>
+          </label>
+        </div>
+        <div id="detectionDetail" class="detection-detail">暂无结果</div>
+      </div>
+    </section>
+    </div>
+
+    <section id="launchPage" class="panel page launch-page">
+      <div class="launch-grid">
+        <div class="field-group">
+          <label>
+            <span>配置文件</span>
+            <input id="launchConfigInput" type="text" value="configs/config.yaml" />
+            <span class="hint">传给 --config，通常保持 configs/config.yaml。</span>
+          </label>
+
+          <div class="compact-grid">
+            <label class="check-row">
+              <input id="launchOverlayInput" type="checkbox" checked disabled />
+              <span>--overlay 固定</span>
+              <span class="hint">显示运行状态浮层。</span>
+            </label>
+            <label class="check-row">
+              <input id="launchDryRunInput" type="checkbox" />
+              <span>--dry-run</span>
+              <span class="hint">F9 只识别并显示将执行的 V0.4 步骤，硬禁用全部输入。</span>
+            </label>
+          </div>
+
+        </div>
+
+        <div class="field-group">
+          <label>
+            <span>检测开关</span>
+            <select id="launchDetectorEnabledInput">
+              <option value="true" selected>启用</option>
+              <option value="false">禁用</option>
+            </select>
+            <span class="hint">控制 detection.enabled，本次运行临时生效。</span>
+          </label>
+
+          <div id="launchModelDropZone" class="drop model-drop">
+            <div>
+              <strong>推理文件</strong>
+              <span>.onnx / .pt</span>
+              <div id="launchModelFileText" class="file-note">默认: models/farm-icons/best.onnx</div>
+              <div class="hint">拖入后会上传到本地 logs 目录并优先使用。</div>
+            </div>
+          </div>
+
+          <input id="launchModelInput" type="file" accept=".onnx,.pt" />
+
+          <label>
+            <span>模型路径</span>
+            <input id="launchModelPathInput" type="text" value="models/farm-icons/best.onnx" />
+            <span class="hint">传给 --detector-model；未上传文件时使用这个路径。</span>
+          </label>
+
+          <label>
+            <span class="row"><span>置信度</span><span id="launchConfText">0.60</span></span>
+            <input id="launchConfInput" type="range" min="0.01" max="0.95" step="0.01" value="0.60" />
+            <span class="hint">传给 --detector-conf；越高越保守，漏检可能增加。</span>
+          </label>
+
+          <label>
+            <span class="row"><span>IoU</span><span id="launchIouText">0.45</span></span>
+            <input id="launchIouInput" type="range" min="0.10" max="0.90" step="0.01" value="0.45" />
+            <span class="hint">传给 --detector-iou；控制重叠检测框合并强度。</span>
+          </label>
+
+          <div class="compact-grid">
+            <label>
+              <span>图片尺寸</span>
+              <select id="launchImgszInput">
+                <option value="960" selected>960</option>
+                <option value="640">640</option>
+                <option value="1280">1280</option>
+              </select>
+              <span class="hint">传给 --detector-imgsz；大一些更慢但可能更稳。</span>
+            </label>
+            <label>
+              <span>设备</span>
+              <input id="launchDeviceInput" type="text" value="cpu" />
+              <span class="hint">传给 --detector-device；Windows 本地默认 cpu。</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="launch-actions">
+          <button id="launchButton" type="button">按 scripts/start-farm.bat 启动</button>
+          <div id="launchStatus" class="status">等待启动: main.py --overlay</div>
+        </div>
+
+        <div id="runSummary" class="run-summary">暂无启动记录</div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const modelInput = document.getElementById("modelInput");
+    const modelDropZone = document.getElementById("modelDropZone");
+    const modelFileText = document.getElementById("modelFileText");
+    const imageInput = document.getElementById("imageInput");
+    const imageDropZone = document.getElementById("imageDropZone");
+    const imageFileText = document.getElementById("imageFileText");
+    const runButton = document.getElementById("runButton");
+    const statusEl = document.getElementById("status");
+    const imageWrap = document.getElementById("imageWrap");
+    const resultCanvas = document.getElementById("resultCanvas");
+    const canvasCtx = resultCanvas.getContext("2d");
+    const placeholder = document.getElementById("placeholder");
+    const detectionSelect = document.getElementById("detectionSelect");
+    const detectionDetail = document.getElementById("detectionDetail");
+    const fullscreenButton = document.getElementById("fullscreenButton");
+    const selectAllButton = document.getElementById("selectAllButton");
+    const hideSelectedButton = document.getElementById("hideSelectedButton");
+    const hideAllButton = document.getElementById("hideAllButton");
+    const showAllButton = document.getElementById("showAllButton");
+    const hideLabelsInput = document.getElementById("hideLabelsInput");
+    const countText = document.getElementById("countText");
+    const modelInfo = document.getElementById("modelInfo");
+    const confInput = document.getElementById("confInput");
+    const iouInput = document.getElementById("iouInput");
+    const imgszInput = document.getElementById("imgszInput");
+    const confText = document.getElementById("confText");
+    const iouText = document.getElementById("iouText");
+    const navButtons = [...document.querySelectorAll(".nav-button")];
+    const pages = [...document.querySelectorAll(".page")];
+    const launchConfigInput = document.getElementById("launchConfigInput");
+    const launchOverlayInput = document.getElementById("launchOverlayInput");
+    const launchDryRunInput = document.getElementById("launchDryRunInput");
+    const launchDetectorEnabledInput = document.getElementById("launchDetectorEnabledInput");
+    const launchModelDropZone = document.getElementById("launchModelDropZone");
+    const launchModelInput = document.getElementById("launchModelInput");
+    const launchModelFileText = document.getElementById("launchModelFileText");
+    const launchModelPathInput = document.getElementById("launchModelPathInput");
+    const launchConfInput = document.getElementById("launchConfInput");
+    const launchIouInput = document.getElementById("launchIouInput");
+    const launchImgszInput = document.getElementById("launchImgszInput");
+    const launchDeviceInput = document.getElementById("launchDeviceInput");
+    const launchConfText = document.getElementById("launchConfText");
+    const launchIouText = document.getElementById("launchIouText");
+    const launchButton = document.getElementById("launchButton");
+    const launchStatus = document.getElementById("launchStatus");
+    const runSummary = document.getElementById("runSummary");
+
+    let selectedImageFile = null;
+    let selectedModelFile = null;
+    let selectedLaunchModelFile = null;
+    let latestDetections = [];
+    let selectedDetectionIds = new Set();
+    let hiddenDetectionIds = new Set();
+    let hideLabels = false;
+    let currentImage = null;
+    let currentImageUrl = null;
+    let imageLoadPromise = Promise.resolve();
+
+    function setStatus(message, isError = false) {
+      statusEl.textContent = message;
+      statusEl.classList.toggle("error", isError);
+    }
+
+    function setLaunchStatus(message, isError = false) {
+      launchStatus.textContent = message;
+      launchStatus.classList.toggle("error", isError);
+    }
+
+    function switchPage(pageId) {
+      pages.forEach((page) => {
+        page.classList.toggle("is-active", page.id === pageId);
+      });
+      navButtons.forEach((button) => {
+        button.classList.toggle("is-active", button.dataset.page === pageId);
+      });
+    }
+
+    function setSelectedImageFile(file) {
+      selectedImageFile = file;
+      latestDetections = [];
+      selectedDetectionIds = new Set();
+      hiddenDetectionIds = new Set();
+      runButton.disabled = !file;
+      imageFileText.textContent = file ? file.name : "等待图片";
+      setStatus(file ? `图片: ${file.name}` : "等待图片");
+      if (file) {
+        loadImagePreview(file);
+      } else {
+        clearCanvas();
+        renderDetections([]);
+      }
+    }
+
+    function setSelectedModelFile(file) {
+      selectedModelFile = file;
+      modelFileText.textContent = file ? file.name : "默认: models/farm-icons/best.onnx";
+      setStatus(file ? `权重: ${file.name}` : "使用默认模型");
+    }
+
+    function setSelectedLaunchModelFile(file) {
+      selectedLaunchModelFile = file;
+      launchModelFileText.textContent = file ? file.name : "默认: models/farm-icons/best.onnx";
+      setLaunchStatus(file ? `推理文件: ${file.name}` : "使用模型路径");
+    }
+
+    function updateSliderText() {
+      confText.textContent = Number(confInput.value).toFixed(2);
+      iouText.textContent = Number(iouInput.value).toFixed(2);
+    }
+
+    function updateLaunchSliderText() {
+      launchConfText.textContent = Number(launchConfInput.value).toFixed(2);
+      launchIouText.textContent = Number(launchIouInput.value).toFixed(2);
+    }
+
+    function clearCanvas() {
+      currentImage = null;
+      resultCanvas.hidden = true;
+      placeholder.hidden = false;
+      fullscreenButton.disabled = true;
+      canvasCtx.clearRect(0, 0, resultCanvas.width, resultCanvas.height);
+    }
+
+    function loadImagePreview(file) {
+      if (currentImageUrl) {
+        URL.revokeObjectURL(currentImageUrl);
+      }
+      currentImageUrl = URL.createObjectURL(file);
+      imageLoadPromise = new Promise((resolve, reject) => {
+        const image = new Image();
+        image.onload = () => {
+          currentImage = image;
+          resultCanvas.width = image.naturalWidth;
+          resultCanvas.height = image.naturalHeight;
+          resultCanvas.hidden = false;
+          placeholder.hidden = true;
+          fullscreenButton.disabled = false;
+          drawCanvas();
+          resolve();
+        };
+        image.onerror = () => {
+          clearCanvas();
+          reject(new Error("图片加载失败"));
+        };
+        image.src = currentImageUrl;
+      });
+      return imageLoadPromise;
+    }
+
+    function classColor(classId) {
+      const palette = [
+        [0, 170, 255],
+        [110, 190, 80],
+        [255, 120, 60],
+        [220, 90, 220],
+        [80, 220, 220],
+        [180, 140, 255],
+        [90, 220, 140],
+      ];
+      return palette[Number(classId) % palette.length];
+    }
+
+    function rgba(color, alpha) {
+      return `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${alpha})`;
+    }
+
+    function visibleDetectionCount() {
+      return latestDetections.filter((_, index) => !hiddenDetectionIds.has(index)).length;
+    }
+
+    function drawCanvas() {
+      if (!currentImage) {
+        return;
+      }
+      canvasCtx.clearRect(0, 0, resultCanvas.width, resultCanvas.height);
+      canvasCtx.drawImage(currentImage, 0, 0, resultCanvas.width, resultCanvas.height);
+
+      latestDetections.forEach((item, index) => {
+        if (hiddenDetectionIds.has(index)) {
+          return;
+        }
+        const [x0, y0, x1, y1] = item.box.map((value) => Number(value));
+        const selected = selectedDetectionIds.has(index);
+        const color = selected ? [255, 230, 70] : classColor(item.class_id);
+        const label = `#${index + 1} ${item.name} ${Number(item.score).toFixed(2)}`;
+        const width = Math.max(2, resultCanvas.width / 900) * (selected ? 2.2 : 1);
+
+        canvasCtx.save();
+        canvasCtx.strokeStyle = rgba(color, 1);
+        canvasCtx.lineWidth = width;
+        canvasCtx.strokeRect(x0, y0, x1 - x0, y1 - y0);
+
+        if (hideLabels) {
+          canvasCtx.restore();
+          return;
+        }
+
+        canvasCtx.font = "24px Segoe UI, Arial, sans-serif";
+        canvasCtx.textBaseline = "top";
+        const metrics = canvasCtx.measureText(label);
+        const labelWidth = metrics.width + 14;
+        const labelHeight = 32;
+        const labelX = Math.max(0, Math.min(x0, resultCanvas.width - labelWidth));
+        const labelY = Math.max(0, y0 - labelHeight - 4);
+        canvasCtx.fillStyle = rgba(color, 0.92);
+        canvasCtx.fillRect(labelX, labelY, labelWidth, labelHeight);
+        canvasCtx.fillStyle = "#071016";
+        canvasCtx.fillText(label, labelX + 7, labelY + 4);
+        canvasCtx.restore();
+      });
+    }
+
+    function optionLabel(item, index) {
+      const score = Number(item.score).toFixed(3);
+      const box = item.box.map((value) => Number(value).toFixed(0)).join(", ");
+      const hidden = hiddenDetectionIds.has(index) ? "hidden" : "visible";
+      return `#${index + 1} ${item.name} ${score} | ${hidden} | ${box}`;
+    }
+
+    function renderDetections(detections) {
+      latestDetections = detections;
+      selectedDetectionIds = detections.length ? new Set([0]) : new Set();
+      hiddenDetectionIds = new Set();
+      renderDetectionControls();
+      drawCanvas();
+    }
+
+    function renderDetectionControls() {
+      const visible = visibleDetectionCount();
+      countText.textContent = `${visible}/${latestDetections.length} visible`;
+      detectionSelect.innerHTML = "";
+      if (!latestDetections.length) {
+        detectionSelect.disabled = true;
+        detectionSelect.append(new Option("没有检测框", ""));
+        detectionDetail.textContent = "没有检测框";
+        selectAllButton.disabled = true;
+        hideSelectedButton.disabled = true;
+        hideAllButton.disabled = true;
+        showAllButton.disabled = true;
+        return;
+      }
+      detectionSelect.disabled = false;
+      latestDetections.forEach((item, index) => {
+        detectionSelect.append(new Option(optionLabel(item, index), String(index)));
+      });
+      const selectedIndex = selectedDetectionIds.size ? [...selectedDetectionIds][0] : 0;
+      detectionSelect.value = String(selectedIndex);
+      selectAllButton.disabled = selectedDetectionIds.size === latestDetections.length;
+      hideSelectedButton.disabled = selectedDetectionIds.size === 0;
+      hideAllButton.disabled = visible === 0;
+      showAllButton.disabled = hiddenDetectionIds.size === 0;
+      renderDetectionDetails();
+    }
+
+    function renderDetectionDetails() {
+      detectionDetail.innerHTML = "";
+      if (!latestDetections.length) {
+        detectionDetail.textContent = "暂无结果";
+        return;
+      }
+      latestDetections.forEach((item, index) => {
+        const box = item.box.map((value) => Number(value).toFixed(1)).join(", ");
+        const row = document.createElement("div");
+        row.className = "detail-row";
+        row.classList.toggle("is-selected", selectedDetectionIds.has(index));
+        row.classList.toggle("is-hidden", hiddenDetectionIds.has(index));
+        row.dataset.index = String(index);
+
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.checked = selectedDetectionIds.has(index);
+        checkbox.addEventListener("change", () => {
+          if (checkbox.checked) {
+            selectedDetectionIds.add(index);
+          } else {
+            selectedDetectionIds.delete(index);
+          }
+          if (selectedDetectionIds.size) {
+            detectionSelect.value = String([...selectedDetectionIds][0]);
+          }
+          renderDetectionControls();
+          drawCanvas();
+        });
+
+        const name = document.createElement("div");
+        name.className = "detail-name";
+        name.textContent = `#${index + 1} ${item.name}`;
+
+        const score = document.createElement("div");
+        score.textContent = Number(item.score).toFixed(3);
+
+        const coords = document.createElement("div");
+        coords.className = "detail-box";
+        coords.textContent = box;
+
+        row.append(checkbox, name, score, coords);
+        row.addEventListener("click", (event) => {
+          if (event.target === checkbox) {
+            return;
+          }
+          selectDetection(index, event.ctrlKey || event.shiftKey);
+        });
+        detectionDetail.appendChild(row);
+      });
+    }
+
+    function selectDetection(index, append = false) {
+      if (!append) {
+        selectedDetectionIds = new Set([index]);
+      } else if (selectedDetectionIds.has(index)) {
+        selectedDetectionIds.delete(index);
+      } else {
+        selectedDetectionIds.add(index);
+      }
+      if (selectedDetectionIds.size) {
+        detectionSelect.value = String([...selectedDetectionIds][0]);
+      }
+      renderDetectionControls();
+      drawCanvas();
+    }
+
+    function hitTestDetection(canvasX, canvasY) {
+      for (let index = latestDetections.length - 1; index >= 0; index -= 1) {
+        if (hiddenDetectionIds.has(index)) {
+          continue;
+        }
+        const [x0, y0, x1, y1] = latestDetections[index].box.map((value) => Number(value));
+        if (canvasX >= x0 && canvasX <= x1 && canvasY >= y0 && canvasY <= y1) {
+          return index;
+        }
+      }
+      return -1;
+    }
+
+    function canvasPoint(event) {
+      const rect = resultCanvas.getBoundingClientRect();
+      return {
+        x: (event.clientX - rect.left) * (resultCanvas.width / rect.width),
+        y: (event.clientY - rect.top) * (resultCanvas.height / rect.height),
+      };
+    }
+
+    async function loadStatus() {
+      try {
+        const response = await fetch("/api/status");
+        const data = await response.json();
+        modelInfo.textContent = `${data.model} | ${data.device}`;
+      } catch (error) {
+        modelInfo.textContent = "status unavailable";
+      }
+    }
+
+    async function runDetection() {
+      if (!selectedImageFile) {
+        setStatus("请选择图片", true);
+        return;
+      }
+
+      const form = new FormData();
+      form.append("image", selectedImageFile);
+      if (selectedModelFile) {
+        form.append("model", selectedModelFile);
+      }
+      form.append("conf", confInput.value);
+      form.append("iou", iouInput.value);
+      form.append("imgsz", imgszInput.value);
+
+      runButton.disabled = true;
+      setStatus(selectedModelFile ? "上传权重并推理中..." : "推理中...");
+
+      try {
+        const response = await fetch("/api/detect", { method: "POST", body: form });
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(data.error || `HTTP ${response.status}`);
+        }
+
+        await imageLoadPromise;
+        resultCanvas.hidden = false;
+        placeholder.hidden = true;
+        renderDetections(data.detections || []);
+        if (data.model) {
+          modelInfo.textContent = `${data.model} | cpu`;
+        }
+        setStatus(`完成: ${(data.detections || []).length} 个检测框`);
+      } catch (error) {
+        setStatus(error.message, true);
+      } finally {
+        runButton.disabled = !selectedImageFile;
+      }
+    }
+
+    async function runMainScript() {
+      const form = new FormData();
+      form.append("config", launchConfigInput.value.trim() || "configs/config.yaml");
+      form.append("overlay", launchOverlayInput.checked ? "true" : "false");
+      form.append("dry_run", launchDryRunInput.checked ? "true" : "false");
+      form.append("detector_enabled", launchDetectorEnabledInput.value);
+      form.append("detector_model_path", launchModelPathInput.value.trim());
+      if (selectedLaunchModelFile) {
+        form.append("detector_model", selectedLaunchModelFile);
+      }
+      form.append("detector_conf", launchConfInput.value);
+      form.append("detector_iou", launchIouInput.value);
+      form.append("detector_imgsz", launchImgszInput.value);
+      form.append("detector_device", launchDeviceInput.value.trim() || "cpu");
+
+      launchButton.disabled = true;
+      setLaunchStatus("启动中...");
+      try {
+        const response = await fetch("/api/run-main", { method: "POST", body: form });
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(data.error || `HTTP ${response.status}`);
+        }
+        runSummary.textContent = [
+          `pid: ${data.pid}`,
+          `launcher: ${data.launcher || "scripts/start-farm.bat compatible"}`,
+          `log: ${data.log}`,
+          `model: ${data.saved_model || launchModelPathInput.value.trim() || "config default"}`,
+          "",
+          (data.command || []).join(" "),
+        ].join("\n");
+        setLaunchStatus(`已启动 PID ${data.pid}`);
+      } catch (error) {
+        setLaunchStatus(error.message, true);
+      } finally {
+        launchButton.disabled = false;
+      }
+    }
+
+    function wireDropZone(zone, onFile) {
+      zone.addEventListener("dragover", (event) => {
+        event.preventDefault();
+        zone.classList.add("is-dragging");
+      });
+
+      zone.addEventListener("dragleave", () => {
+        zone.classList.remove("is-dragging");
+      });
+
+      zone.addEventListener("drop", (event) => {
+        event.preventDefault();
+        zone.classList.remove("is-dragging");
+        const file = event.dataTransfer.files && event.dataTransfer.files[0];
+        if (file) {
+          onFile(file, event.dataTransfer.files);
+        }
+      });
+    }
+
+    navButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        switchPage(button.dataset.page);
+      });
+    });
+
+    modelInput.addEventListener("change", () => {
+      setSelectedModelFile(modelInput.files && modelInput.files[0] ? modelInput.files[0] : null);
+    });
+
+    launchModelInput.addEventListener("change", () => {
+      setSelectedLaunchModelFile(
+        launchModelInput.files && launchModelInput.files[0] ? launchModelInput.files[0] : null,
+      );
+    });
+
+    imageInput.addEventListener("change", () => {
+      setSelectedImageFile(imageInput.files && imageInput.files[0] ? imageInput.files[0] : null);
+    });
+
+    wireDropZone(modelDropZone, (file, fileList) => {
+      modelInput.files = fileList;
+      setSelectedModelFile(file);
+    });
+
+    wireDropZone(launchModelDropZone, (file, fileList) => {
+      launchModelInput.files = fileList;
+      setSelectedLaunchModelFile(file);
+    });
+
+    wireDropZone(imageDropZone, (file, fileList) => {
+      imageInput.files = fileList;
+      setSelectedImageFile(file);
+      runDetection();
+    });
+
+    document.addEventListener("paste", (event) => {
+      const items = event.clipboardData && event.clipboardData.items ? event.clipboardData.items : [];
+      for (const item of items) {
+        if (item.type && item.type.startsWith("image/")) {
+          const pasted = item.getAsFile();
+          if (!pasted) {
+            continue;
+          }
+          const stamp = new Date().toISOString().replace(/[-:.TZ]/g, "").slice(0, 14);
+          const pastedFile = new File([pasted], `pasted_${stamp}.png`, { type: pasted.type || "image/png" });
+          setSelectedImageFile(pastedFile);
+          runDetection();
+          event.preventDefault();
+          break;
+        }
+      }
+    });
+
+    runButton.addEventListener("click", runDetection);
+    launchButton.addEventListener("click", runMainScript);
+    confInput.addEventListener("input", updateSliderText);
+    iouInput.addEventListener("input", updateSliderText);
+    launchConfInput.addEventListener("input", updateLaunchSliderText);
+    launchIouInput.addEventListener("input", updateLaunchSliderText);
+    detectionSelect.addEventListener("change", () => {
+      const index = Number(detectionSelect.value);
+      if (!Number.isNaN(index)) {
+        selectDetection(index, false);
+      }
+    });
+    selectAllButton.addEventListener("click", () => {
+      selectedDetectionIds = new Set(latestDetections.map((_, index) => index));
+      renderDetectionControls();
+      drawCanvas();
+    });
+    hideSelectedButton.addEventListener("click", () => {
+      selectedDetectionIds.forEach((index) => hiddenDetectionIds.add(index));
+      renderDetectionControls();
+      drawCanvas();
+    });
+    hideAllButton.addEventListener("click", () => {
+      hiddenDetectionIds = new Set(latestDetections.map((_, index) => index));
+      renderDetectionControls();
+      drawCanvas();
+    });
+    showAllButton.addEventListener("click", () => {
+      hiddenDetectionIds.clear();
+      renderDetectionControls();
+      drawCanvas();
+    });
+    hideLabelsInput.addEventListener("change", () => {
+      hideLabels = hideLabelsInput.checked;
+      drawCanvas();
+    });
+    fullscreenButton.addEventListener("click", async () => {
+      if (!document.fullscreenElement) {
+        await imageWrap.requestFullscreen();
+      } else {
+        await document.exitFullscreen();
+      }
+    });
+    document.addEventListener("fullscreenchange", () => {
+      fullscreenButton.textContent = document.fullscreenElement === imageWrap ? "退出全屏" : "全屏";
+    });
+    resultCanvas.addEventListener("click", (event) => {
+      const point = canvasPoint(event);
+      const index = hitTestDetection(point.x, point.y);
+      if (index >= 0) {
+        selectDetection(index, event.ctrlKey || event.shiftKey);
+      }
+    });
+
+    updateSliderText();
+    updateLaunchSliderText();
+    loadStatus();
+  </script>
+</body>
+</html>

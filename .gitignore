@@ -1,0 +1,36 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+# Local data, model weights and run outputs
+logs/
+datasets/
+runs/
+outputs/
+*.pt
+*.onnx
+*.engine
+*.tflite
+*.cache
+*.old
+configs/*.user_tasks.yaml
+# Credentials and private workstation settings
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+.agents/
+.codex/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

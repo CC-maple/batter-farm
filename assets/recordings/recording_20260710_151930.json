@@ -1,0 +1,695 @@
+{
+  "version": 1,
+  "session_id": "20260710_151930",
+  "started_at": "2026-07-10T15:19:30",
+  "duration_ms": 59140,
+  "recording_mode": "input_only",
+  "window": {
+    "title": "元梦之星-山海寻灵",
+    "hwnd": 2752616,
+    "capture_origin": [
+      160,
+      70
+    ],
+    "capture_region": [
+      160,
+      70,
+      1600,
+      900
+    ],
+    "coordinate_source": "screen_to_client"
+  },
+  "screen_size": [
+    1920,
+    1080
+  ],
+  "stop_key": "f10",
+  "mark_key": "f9",
+  "move_sample_ms": 1,
+  "screenshot_mode": "none",
+  "events": [
+    {
+      "type": "session_start",
+      "t_ms": 515
+    },
+    {
+      "type": "key_down",
+      "key": "r",
+      "keys": [
+        "r"
+      ],
+      "t_ms": 1484
+    },
+    {
+      "type": "key_up",
+      "key": "r",
+      "keys": [],
+      "t_ms": 1562
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 2593
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 4625
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 4968
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 5297
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 6000
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 6281
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 7109,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 7250,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 11593,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 11703,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 13406
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 13672
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 14328,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 14484,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 16828,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 16953,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 18578
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 18718
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 18968
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 19062
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 19484
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 19578
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 21078,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 21203,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 23703,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 23812,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "r",
+      "keys": [
+        "r"
+      ],
+      "t_ms": 25265
+    },
+    {
+      "type": "key_up",
+      "key": "r",
+      "keys": [],
+      "t_ms": 25375
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 25937
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 27812
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 28062
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 28281
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 28812
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 29328
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 29922,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 30047,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 32578,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 32734,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 34078
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 34422
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 35359,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 35531,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 38281,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 38406,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 40562
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [],
+      "t_ms": 40765
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 42703,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 42859,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 45812,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 45953,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "r",
+      "keys": [
+        "r"
+      ],
+      "t_ms": 47250
+    },
+    {
+      "type": "key_up",
+      "key": "r",
+      "keys": [],
+      "t_ms": 47343
+    },
+    {
+      "type": "key_down",
+      "key": "s",
+      "keys": [
+        "s"
+      ],
+      "t_ms": 47906
+    },
+    {
+      "type": "key_up",
+      "key": "s",
+      "keys": [],
+      "t_ms": 48531
+    },
+    {
+      "type": "mouse_down",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [
+        "right"
+      ],
+      "t_ms": 49922,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "right",
+      "screen": [
+        1424,
+        415
+      ],
+      "buttons": [],
+      "t_ms": 50047,
+      "client": [
+        1264,
+        345
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "r",
+      "keys": [
+        "r"
+      ],
+      "t_ms": 57234
+    },
+    {
+      "type": "key_up",
+      "key": "r",
+      "keys": [],
+      "t_ms": 57328
+    },
+    {
+      "type": "session_stop",
+      "key": "f10",
+      "t_ms": 59140
+    }
+  ]
+}

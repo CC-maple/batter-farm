@@ -1,0 +1,438 @@
+{
+  "version": 1,
+  "session_id": "20260710_110224",
+  "started_at": "2026-07-10T11:02:24",
+  "duration_ms": 29480,
+  "recording_mode": "input_only",
+  "window": {
+    "title": "元梦之星-山海寻灵",
+    "hwnd": 2752616,
+    "capture_origin": [
+      160,
+      70
+    ],
+    "capture_region": [
+      160,
+      70,
+      1600,
+      900
+    ],
+    "coordinate_source": "screen_to_client"
+  },
+  "screen_size": [
+    1920,
+    1080
+  ],
+  "stop_key": "f10",
+  "mark_key": "f9",
+  "move_sample_ms": 10,
+  "screenshot_mode": "none",
+  "events": [
+    {
+      "type": "session_start",
+      "t_ms": 515
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1145,
+        847
+      ],
+      "buttons": [],
+      "t_ms": 1585,
+      "client": [
+        985,
+        777
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1149,
+        843
+      ],
+      "buttons": [],
+      "t_ms": 1595,
+      "client": [
+        989,
+        773
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1153,
+        835
+      ],
+      "buttons": [],
+      "t_ms": 1607,
+      "client": [
+        993,
+        765
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1154,
+        827
+      ],
+      "buttons": [],
+      "t_ms": 1617,
+      "client": [
+        994,
+        757
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1155,
+        818
+      ],
+      "buttons": [],
+      "t_ms": 1628,
+      "client": [
+        995,
+        748
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1155,
+        810
+      ],
+      "buttons": [],
+      "t_ms": 1638,
+      "client": [
+        995,
+        740
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1155,
+        804
+      ],
+      "buttons": [],
+      "t_ms": 1648,
+      "client": [
+        995,
+        734
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1155,
+        798
+      ],
+      "buttons": [],
+      "t_ms": 1659,
+      "client": [
+        995,
+        728
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1155,
+        794
+      ],
+      "buttons": [],
+      "t_ms": 1669,
+      "client": [
+        995,
+        724
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1154,
+        790
+      ],
+      "buttons": [],
+      "t_ms": 1681,
+      "client": [
+        994,
+        720
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1153,
+        785
+      ],
+      "buttons": [],
+      "t_ms": 1694,
+      "client": [
+        993,
+        715
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_move",
+      "screen": [
+        1152,
+        783
+      ],
+      "buttons": [],
+      "t_ms": 1727,
+      "client": [
+        992,
+        713
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_down",
+      "button": "left",
+      "screen": [
+        1152,
+        783
+      ],
+      "buttons": [
+        "left"
+      ],
+      "t_ms": 1761,
+      "client": [
+        992,
+        713
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "mouse_up",
+      "button": "left",
+      "screen": [
+        1152,
+        783
+      ],
+      "buttons": [],
+      "t_ms": 1844,
+      "client": [
+        992,
+        713
+      ],
+      "inside_client": true
+    },
+    {
+      "type": "key_down",
+      "key": "r",
+      "keys": [
+        "r"
+      ],
+      "t_ms": 2096
+    },
+    {
+      "type": "key_up",
+      "key": "r",
+      "keys": [],
+      "t_ms": 2187
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 2401
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 3874
+    },
+    {
+      "type": "key_down",
+      "key": "q",
+      "keys": [
+        "q"
+      ],
+      "t_ms": 4475
+    },
+    {
+      "type": "key_up",
+      "key": "q",
+      "keys": [],
+      "t_ms": 4574
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a"
+      ],
+      "t_ms": 4901
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "a",
+        "w"
+      ],
+      "t_ms": 5015
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 5240
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a",
+        "w"
+      ],
+      "t_ms": 5624
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 5825
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d",
+        "w"
+      ],
+      "t_ms": 5999
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 6143
+    },
+    {
+      "type": "key_down",
+      "key": "a",
+      "keys": [
+        "a",
+        "w"
+      ],
+      "t_ms": 10987
+    },
+    {
+      "type": "key_up",
+      "key": "a",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 11374
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d",
+        "w"
+      ],
+      "t_ms": 12545
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 12757
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 12762
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 13377
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 13547
+    },
+    {
+      "type": "key_down",
+      "key": "d",
+      "keys": [
+        "d"
+      ],
+      "t_ms": 14127
+    },
+    {
+      "type": "key_up",
+      "key": "d",
+      "keys": [],
+      "t_ms": 14180
+    },
+    {
+      "type": "key_down",
+      "key": "w",
+      "keys": [
+        "w"
+      ],
+      "t_ms": 14509
+    },
+    {
+      "type": "key_up",
+      "key": "w",
+      "keys": [],
+      "t_ms": 14581
+    },
+    {
+      "type": "key_down",
+      "key": "r",
+      "keys": [
+        "r"
+      ],
+      "t_ms": 27960
+    },
+    {
+      "type": "key_up",
+      "key": "r",
+      "keys": [],
+      "t_ms": 28032
+    },
+    {
+      "type": "session_stop",
+      "key": "f10",
+      "t_ms": 29480
+    }
+  ]
+}
