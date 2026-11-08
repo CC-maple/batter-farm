@@ -1,6 +1,6 @@
 # BatterFarm
 
-Windows 农场画面识别与 UI 自动化工具，包含截图、OCR、YOLO 图标检测、键鼠录制回放和 PySide6 桌面界面 BatterUI。
+Windows 元梦之星农场画面识别与 UI 自动化工具，包含截图、OCR、YOLO 图标检测、键鼠录制回放和 PySide6 桌面界面 BatterUI。
 
 ## 功能
 
